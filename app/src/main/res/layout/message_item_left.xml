@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp" android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/profile_url_messageleft"
+        android:src="@mipmap/ic_launcher"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rel"
+
+        android:layout_toRightOf="@+id/profile_url_messageleft"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/text_messageleft"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_left"
+        android:textColor="@color/md_white_1000"
+        android:layout_marginLeft="5dp"
+        android:padding="8dp"
+        android:text="hello"
+    />
+
+        <TextView
+            android:id="@+id/date_messageleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/text_messageleft"
+
+            android:text="15:47"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>

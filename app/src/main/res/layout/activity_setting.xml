@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    tools:context=".setting">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6e6e6"
+        tools:context=".setting">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="  Modifier votre informations"
+        android:drawableLeft="@drawable/ic_menu_manage"
+        android:layout_margin="30dp"
+
+        />
+    <TextView
+
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_sync_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Changer Votre Username "/>
+    <TextView
+        android:id="@+id/usernamemodifier"
+        android:layout_width="match_parent"
+ android:textColor="#c239f4"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:drawableRight="@drawable/ic_edit_black_24dp"
+        android:hint="nom"/>
+
+    <TextView
+
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="14dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableLeft="@drawable/ic_menu_share"
+        android:text="Changer votre email electronique "/>
+    <TextView
+        android:id="@+id/emailmodifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textColor="#c239f4"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/md_white_1000"
+        android:drawableRight="@drawable/ic_edit_black_24dp"
+        android:hint="email"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageupload"
+        android:layout_width="153dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_person_add_black_24dp"
+
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/modifierimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:text="modifier image profile" />
+ <TextView
+
+        android:textSize="15sp"
+     android:layout_marginBottom="10dp"
+
+        android:drawableLeft="@drawable/ic_sync_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+     android:layout_marginTop="14dp"
+        android:text="Changer ton mot de pass "/>
+   <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+       android:background="@color/md_white_1000"
+                    android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+            android:hint=" le Mot de pass recent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/recmotpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                  android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+                android:background="@color/md_white_1000"
+                android:drawableLeft="@drawable/ic_security_black_24dp"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+                  android:layout_marginLeft="30dp"
+                 android:layout_marginRight="30dp"
+            android:hint="le nouveau mot de pas"
+            app:errorEnabled="true">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nvmotpass"
+                android:layout_width="match_parent"
+                android:background="@color/md_white_1000"
+                android:layout_height="wrap_content"
+                  android:layout_marginLeft="30dp"
+                 android:layout_marginRight="30dp"
+                android:drawableLeft="@drawable/ic_security_black_24dp"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtpassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                 android:layout_marginLeft="30dp"
+                  android:layout_marginRight="30dp"
+             android:background="@color/md_white_1000"
+            android:hint="reacrire une autre fois"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nvmotpass2"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/ic_security_black_24dp"
+                android:background="@color/md_white_1000"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                  android:layout_marginRight="30dp"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnchangermotdepass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:text="changer mot de pass" />
+</LinearLayout>
+</ScrollView>

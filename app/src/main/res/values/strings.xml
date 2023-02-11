@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Chat application</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_drawer_chat1">DrawerChat1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Tajnid chat</string>
+    <string name="nav_header_subtitle">www.tajnid.ma</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- authentification -->
+    <string name="login">Login</string>
+    <string name="password"> mot de pass </string>
+    <string name="connexion">connection </string>
+    <string name="msgerreurlogin">tu as oublier de donner votre email ou bien votre modepass</string>
+    <string name="rester_connecter">Rester connecter </string>
+
+
+    <!-- les navs -->
+    <string name="nav_logintoanotheraccount">Login to another account</string>
+    <string name="nav_contact">contact</string>
+    <!-- les urls -->
+    <string name="urllogin">http://10.0.0.1/chat/login.php</string>
+    <string name="title_activity_contact">Contact</string>
+</resources>
